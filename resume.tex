@@ -1,0 +1,192 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2007-2014 Todd C. Miller <Todd.Miller@sudo.ws> http://www.sudo.ws/todd
+%
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+%个人陈述: 通过多次技术岗位的实习及AI领域科研建立坚实的技术能力，在海外通过创立华人社团、组织NGO工作及参与交流项目锻炼了国际化视角及优秀的沟通交流能力
+\documentclass[letterpaper,10pt]{article}
+
+%-----------------------------------------------------------
+\usepackage[empty]{fullpage}
+\usepackage[fontset=ubuntu]{ctex}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{wrapfig}
+\definecolor{mygrey}{gray}{0.80}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins to 0.5in on all sides
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-3.5pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} \textit{#2}#3 & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+\renewcommand{\labelitemii}{$\textbullet$}
+% \newcommand{\experience}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+
+
+\noindent\begin{minipage}{0.8\textwidth}% adapt widths of minipages to your needs
+\begin{tabular}{p{9.3cm}rp{3cm}}
+\textbf{\Huge\textbf{何雨璇}}  & \footnotesize{+1 201.240.6397 (电话) }\\[-1ex]
+ &  \footnotesize{yuxuan.he.1@gmail.com（邮箱)} \\[-1ex]
+ \textbf{ 求职意向:数据研发/产品经理}& \footnotesize{http://jenniferhe.github.io/Lists.html(个人网站)}\\[-1ex]
+& \footnotesize{jenn\_\_01(微信)}\\[-1ex]
+\end{tabular}
+\end{minipage}%
+\hfill%
+\begin{minipage}{0.17\textwidth}\raggedleft
+\includegraphics[width=\linewidth]{selfie.jpg}
+\hfill%
+\end{minipage}
+% \begin{minipage}{0.7\textwidth}\raggedleft
+% Yesterday,\\
+% all my troubles seemed so far away\\
+% Now it looks as though they're here to stay\\
+% Oh, I believe in yesterday.
+% \end{minipage}
+% \noindent\begin{minipage}{0.7\textwidth}\raggedleft
+
+% \end{minipage}
+% \noindent\begin{minipage}{0.3\textwidth}% adapt widths of minipages to your needs
+% \includegraphics[width=\linewidth]{selfie.jpg}
+% \end{minipage}%
+% \hfill%
+
+% \quad\raisebox{\dimexpr0.7\baselineskip-\height}{\includegraphics[scale=0.2]{selfie.jpg}}
+
+% \begin{tabular}[t]{rl}
+% \begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+%   \textbf{\huge\textbf{ 何雨璇}}  & \textsc{Place:}  Milano, Italy | dd Month 1473                                              \\
+%   &\textsc{Address:}                  Palazzo Carmagnola, Milano, Italy                                          \\
+%   &\textsc{Phone:}                    +39 123 456789                                                             \\
+%   &\textsc{email:}                    \href{mailto:alessandro.plasmati@gmail.com}{alessandro.plasmati@gmail.com}
+% \end{tabular*}
+% \quad
+% \raisebox{\dimexpr0.7\baselineskip-\height}{\includegraphics[scale=0.25]{selfie.jpg}}
+
+
+\vspace{-0.2in}
+
+\resheading{教育经历}
+\begin{itemize}
+    \item
+    \setlength\itemsep{0.05em}
+	\ressubheading{纽约大学}{数据科学研究硕士-自然语言处理方向}{}{2018.8 - 2020.12}
+% 	\begin{itemize}
+% 		\resitem{2019数据科学研究所暑期科研奖学金}
+%     \end{itemize}
+    \item\ressubheading{爱丁堡大学}{信息学院交换项目}{}{2016.8 - 2017.1}
+	\item\ressubheading{里士满大学}{数学与计算机学士}{}{2013.8 - 2018.1}
+% 	\begin{itemize}
+% 		\resitem{2014-2016暑期科研奖学金,2016年优秀学生奖学金,2016年院长嘉许名单}
+%     \end{itemize}
+\end{itemize}
+
+\resheading{技能专长}
+\begin{itemize}
+% \usepackage{setspace}
+\setlength\itemsep{0em}
+    \item\ressubheading{语言: }{}{Python, R, SQL, Java, Matlab, Latex}{}
+	\item\ressubheading{项目/框架: }{}{PyTorch, Numpy, scikit-learn,MatPlotlib,Scipy Hadoop, Spark, ElasticSearch,Couchbase,AWS}{}
+	\item\ressubheading{数理能力: }{}{概率与统计、凸优化、时间序列、机器学习算法}{}
+    \item\ressubheading{工具: }{}{Axure, XMind, Tableau, Jupyter Notebook, Google Data Analysis Toolkit}{}
+\end{itemize}
+
+\resheading{工作及项目经历}
+
+\begin{itemize}
+    \item\ressubheading{Naspers Limited}{}{数据科学实习生}{2019.8 - 2020.2}
+	\begin{itemize}
+\setlength\itemsep{0em}
+	    \resitem{为解决公司不同语料来源的金融类文字数据集进行整合统一模型分析进行科研及编写设计文档}
+		\resitem{编程实现FinBERT,基于BERT模型进行针对金融语言的优化的模型，模型测试准确率达97\%}
+		\resitem{基于FinBERT模型，编程实现Model-AgnosticMeta-Learning(MAML)方法使其同时在超过10个数据集上训练测试 在维持准确度的情况下缩减用时为前者10\%}
+	\end{itemize}
+
+\item
+	\ressubheading{纽约大学数据科学研究所}{}{机器学习系统公正性的科研员}{2019.5 - 2020.2}
+	\begin{itemize}
+		\resitem{参与搭建支持检测和提高数据结果公正性的机器学习框架FairBench}
+		\resitem{负责编写框架基本API包括数据录入、数据清理、 生成统计数据及干预分析模型方法}
+		\resitem{利用不同数据资源测试并收集结果生成图表进行分 析并编写论文}
+	\end{itemize}
+
+\item
+	\ressubheading{纽约大学DS3 Initiative}{}{数据产品经理实习生}{2019.6 - 2019.9}
+	\begin{itemize}
+	\setlength\itemsep{0.05em}
+		\resitem{设计服务于校内学生校友学者教授及教职员工的科研项目合作平台DS3-Workbench}
+		\resitem{进行市场调研、竞品调研、总结需求后生成产品流 程图和设计文档}
+		\resitem{参与搭建后端PostgreSQL数据库模块和收集初步测试数据}
+	\end{itemize}
+
+\item
+	\ressubheading{纽约大学自然语言处理团队}{}{团队开发项目}{2019.2-2019.9}
+	\begin{itemize}
+	\setlength\itemsep{0.05em}
+		\resitem{进行论文调研、寻找测试数据集及编写设计文档}
+		\resitem{用Pytorch建立基于Seq2seq,GatedRNN的自然语言处理模型,并提升模型使其可以接受情感词汇}
+		\resitem{收集及分析用户对话测试结果并建立迭代规划}
+	\end{itemize}
+	
+% \item
+% 	\ressubheading{NYU — 餐厅食品质量安全监测预测}{}{个人项目}{2018.9-2019.1}
+% 	\begin{itemize}
+% 		\resitem{利用REST api从Google Map Reviews 和Yelp reviews获取用户评价数据}
+% 		\resitem{整合和预处理从多方获取的关于地点/时间和餐厅历史数据}
+% 		\resitem{使用多种模型来完成对餐厅质量安全程度的预测, 最优选择来自LightGBM (AUC 0.74)}
+% 	\end{itemize}
+	
+\item
+	\ressubheading{Linkedin(领英) — 广告数据可视化系统}{}{后端开发实习生}{2016.6-2016.9}
+	\begin{itemize}
+	\setlength\itemsep{0.05em}
+		\resitem{在领英广告组负责广告数据库的维护并支持公司内部和第三方对广告的使用}
+		\resitem{为提高组内员工生产效率进行需求调研并生成设计文档}
+		\resitem{使用户Couchbase,ElasticSearch.RestliFilters,Kibana等技术建立可视化日志文件，支持跨数据中心的加密存储、搜索、可视化和分析，帮助提升员工工作效率}
+	\end{itemize}
+% \item
+% 	\ressubheading{University of Richmond — 图像识别科研项目}{}{独立开发}{2018.9-2019.1}
+% 	\begin{itemize}
+% 		\resitem{分别使用Matlab和Python两种语言实现基于SVM和CNN两种机器学习技术的⻦类图片分类，最终识别 准确率达到70%以上 (用到Theano/Lasangne库)}
+% 		\resitem{用Java实现导师要求的爬虫软件抓取所需信息}
+% 	\end{itemize}
+
+\end{itemize}
+
+\resheading{实践经历及获奖}
+\begin{itemize}
+% \usepackage{setspace}
+    \setlength\itemsep{0.05em}
+    \item\ressubheading{2012至今年全球生态村联盟(GEN),国际学生交流协会(YFU),校园社区服务社团(APO)等长期志愿者}{}{}{}
+    \item\ressubheading{2019年Kaggle Million Song Dataset Challenge Top 10\%}{}{}{}
+    \item\ressubheading{2019年纽约大学数据科研所\$4,000科研基金获得者}{}{}{}
+	\item\ressubheading{2019年Enigma数据分析⻢拉松竞赛第一名}{}{}{}
+	\item\ressubheading{2015-2018年优秀学生获得者(Dean’s List)及优秀学生奖
+学金( Herman P.Thomas Scholarship)}{}{}{}
+    \item\ressubheading{2017年德勤北美咨询案例竞赛10强}{}{}{}
+    \item\ressubheading{2016年湾区编程⻢拉松10强}{}{}{}
+    \item\ressubheading{2014-2017里士满大学中国学生会创始人及主席}{}{}{}
+\end{itemize}
+
+\end{document}
