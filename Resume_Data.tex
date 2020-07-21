@@ -1,0 +1,218 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItemm}[1]{
+  \item\small{
+    \textbf{#1}
+  }
+}
+% \newcommand{\resumeItemm}[1]{
+%   \item\textbf{#1}
+% }
+\newcommand{\highlight}[1]{
+\textcolor{Brown}{\textbf{#1}}
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textbf{\small#3} & \textbf{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubItemm}[1]{\resumeItemm{#1}}
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Yuxuan He(Jennifer)}} & Email : \href{mailto:yuxuan.he@richmond.edu}{yuxuan.he.1@gmail.com}\\
+  444 Washington Blvd, Jersey City, NJ, 07310 & Mobile : +1-201-240-6397
+  \vspace{-10pt}
+\end{tabular*}
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {New York University}{New York, NY}
+      {Master of Science in Data Science}{December 2020}
+      \begin{itemize}[leftmargin=0cm]
+      \vspace{-3pt}
+    \item[]Natural Language Processing Track, Data Science and Software Service Award
+    \vspace{-6pt}
+      \end{itemize}
+    \resumeSubheading
+      {University of Richmond}{Richmond, VA}
+      {Bachelor of Science in Mathematics and Computer Science}{Jan 2018}
+    \vspace{-6pt}
+  \resumeSubHeadingListEnd
+%-----------EXPERIENCE-----------------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {Naspers Limited - NYU}{New York, NY}
+      {Data Scientist Intern}{\small Sep 2019 - Feb 2020}
+        \begin{itemize}
+        \item{Build FinBERT, a fine-tuned language model based on BERT specialized in financial domain}
+        \item{Built a multi-task language learner based on FinBERT to solve multiple NLP tasks in finance domain using Model-Agnostic Meta-Learning(MAML) method using \textcolor{Brown}{\textbf{PyTorch}} }
+        \item{Fine-tune language learner for Naspers' business and financial tasks and improve the benchmark performance on pre-defined set of tasks}
+        \end{itemize}
+     \vspace{-8pt}
+    \resumeSubheading
+      {NYU Center of Data Science}{New York, NYU}
+      {Research Assistant}{\small April 2019 - Feb 2020}
+        \begin{itemize}
+        \item{ Implemented FairBench, a machine learning framework which supports data ingestion, custom feature transformation, data cleaning and reusing of fairness metrics and fairness enhancing strategies using \textcolor{Brown}{\textbf{Python, ScikitLearn, IBM AIF360}}}
+        \item{ Conducted extensive experiments on state-of-art machine learning methods and fairness-enhancing methods on multiple datasets and summarized finding about resulting metrics measures in paper}
+        \end{itemize}
+        \vspace{-8pt}
+    % \resumeSubheading
+    %   {NYU DS3 Initiative}{New York, NY}
+    %   {Data Science Intern}{\small April 2019 - Now}
+    %     \begin{itemize}
+    %     \item{Designed and Built a database using Postgresql to store researchers project proposals and candidates information and an interface to support data transaction and retrieval}
+    %     \item{Built simple front end interface to interact with the database using Django framework}
+    %     \end{itemize}
+    %  \vspace{-8pt}
+    % \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    %   \textbf{\small Data Science Project - NYC Restaurant Inspection Forecast}& \textbf{\small Oct 2018 - Dec 2018} \\
+      
+    %   \end{tabular*}
+    %   \vspace{-5pt}
+    %     \begin{itemize}
+    %     \item{Conducted full data science pipeline to forecast restaurant inspection outcomes of NYC including crawling, selecting and \textcolor{Brown}{\textbf{feature engineering}} geological, time and syntax data from various sources}
+    %     \item{Used models including \textcolor{Brown}{\textbf{Logistic regression, Random forrest, Neural Network, LightGBM and Ensemble metheod}} to get final AUC score of 0.74}
+    %     \end{itemize}
+    %     \vspace{-8pt}
+    % \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    %   \textbf{\small Natural Language Understanding Project - Emotional Chatting Machine}& \textbf{\small Jan 2019 - Now} \\
+      
+    %   \end{tabular*}
+    %   \vspace{-5pt}
+    %     \begin{itemize}
+    %     \item{Built an emotional chatting machine using seq2seq model with Gated RNN that incorporates emotional embedding, internal memory and external memory}
+    %     \item{Improved the model performance through global attention mechanism and modifications to internal and external memory module}
+    %     \end{itemize}
+    \resumeSubheading
+      {Linkedin Corporation}{Sunnyvale, CA}
+      {Data Engineer Intern}{Jun 2016 - Sep 2016}
+        \begin{itemize}
+        \item{Designed an internal data logging tool that supported \textcolor{Brown}{\textbf{securely logging, indexing, searching, storing, visualizing and analyzing}} of billions of confidential data records distributed stored across multiple data centers using \textcolor{Brown}{\textbf{Java}}}
+        \item{Implemented the data logging tool and successfully reduced teams average time to detect error using \textcolor{Brown}{\textbf{Couchbase, Kafka, Elasticsearch, Restli filters and Kibana dashboard}}}
+        \end{itemize}
+        \vspace{-8pt}
+    % \resumeSubheading
+    %   {University of Richmond}{Richmond, VA}
+    %   {Machine Learning Researcher}{Jan 2015 - May 2016}
+      %\textbf{\small{Lab Consultant and Teaching Assistant}} 
+      %\hfill{\textbf{\small {Nov 2015 - May 2016}}} 
+    %   \begin{itemize}
+    %   \item{Initiated the implementation of \textcolor{Brown}{\textbf{Convoluted Neural Network}} approach in Python using Lasagne and Theano package for bird species image recognition project and significantly improved previous model accuracy to 94\%}
+    %   \end{itemize}
+    
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Project Experiences}
+  \resumeSubHeadingListStart
+      \resumeSubItemm{Emotional Chatting Machine}\href{https://github.com/jenniferhe/Emotional_Chatting_Machine}{\textbf{\color{blue}[Github Repo]}} 
+      \vspace{-5pt}
+      \begin{itemize}
+        \item{Incorporated emotion to\highlight{Seq2seq} chatbot model by 1) trained  sentiment classifiers using \textcolor{Brown}{\textbf{BERT and Bi-LSTM}} and selected the most accurate one to pre-classify corpus emotion using \textcolor{Brown}{\textbf{TensorFlow}}, 2) add memory module to decoder Gated RNN to handle emotion input using \textcolor{Brown}{\textbf{Pytorch}}}
+        \item{Further improved model evaluation scores by implementing global attention mechanism and deployed the model online using \textcolor{Brown}{\textbf{Django}} }
+        \vspace{-5pt}
+        \end{itemize}
+     \resumeSubItemm{Kaggle Million Song Dataset Challenge}\href{https://github.com/jenniferhe/Song_Recommender_System}{\textbf{\color{blue}[Github Repo]}} 
+      \vspace{-5pt}
+      \begin{itemize}
+        \item{Built a \highlight{Recommender System }using \textcolor{Brown}{\textbf{alternating least squares (ALS)}} model and ranked \textcolor{Brown}{\textbf{10\%}}  for Kaggle Million Song Dataset using \textcolor{Brown}{\textbf{Python, Spark, SQLite}} }
+        \item{Implemented cold-start strategy to handle new data occurrences}
+        \vspace{-5pt}
+        \end{itemize}
+    %   \resumeSubItem{Linkedin Hackday Top Finalists}
+    %   {Won Top Finalists with an online gift recommendation service(using node.js + express + bootstrap framework) that offer gift suggestions from Amazon based on personal data extracted from social media}
+   
+      \resumeSubItem{Restaurant Inspection Forecast}
+      {\href{https://github.com/jenniferhe/Restaurant_Inspection_Forcasting}{\textbf{\color{blue}[Github Repo]}} Conducted full data science pipeline  1) Crawled resturant reviews using \textcolor{Brown}{\textbf{Yelp and Goolge Map API}} , 2) Extract features from geological, time and syntax data 3) Built and selected models to forecast restaurant inspection outcomes 4) Produe final evaluation and report(final acc 0.78\%) using \textcolor{Brown}{\textbf{Python, ScikitLearn, LightGBM, XGBoost and Tableau}}}
+    %           \resumeSubItem{Bird Image Recognition}
+    %   {Implemented Convoluted Neural Network approach using \textcolor{Brown}{\textbf{Python,Lasagne, Theano}}, reached 94\% accuracy on bird species image recognition}
+    %   \resumeSubItem{Runtime Malware Detection Research}{A team research project aims at detect malicious webpages at runtime using machine learning techniques, in which I designed a URL data-harvesting \textcolor{Brown}{\textbf{web crawler}} to collect and process web content}
+    %   \resumeSubItem{Language Translator}
+    %   {Implemented \textcolor{Brown}{\textbf{transformer neural network}} using tensorflow according to "Attention is All Your Need" paper so that the translator can perform word by word translation from English to French}
+  \resumeSubHeadingListEnd
+%--------Technical SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Math and Statistical Skills}{Convex Optimization, Time Series Analysis, Statistics and Probability, Linear Algebra, A/B testing}
+    \resumeSubItem{Computer Skills}{Python(xgboost, tensorflow, pytorch, Keras,scikit-learn, numpy, pandas, opencv), Java, R, Hadoop, Spark, AWS,  SQLite, SQL, ElasticSearch, Couchbase}
+    % \resumeSubItem{Business Skills}{: Leadership, Communication, Collaboration, Presentation, Ability to transfer commercial goal into data-driven objective}
+%     Programming: Python (xgboost, tensorflow, scikit-learn, numpy, pandas, opencv, flask), R, Java, Scala, Shell/script
+% Deep Learning Framework: TensorFlow, PyTorch, Keras
+% Big data: SQL, MongoDB, AWS, Hive, Spark
+% Mathematics: Convex Optimization, Statistics and Probability, Linear Algebra, Calculus 
+  \resumeSubHeadingListEnd
+
+
+
+
+%-------------------------------------------
+\end{document}
